@@ -1,12 +1,6 @@
-# Ignore NetBeans GUI builder files
-*.form linguist-generated=true
+*.form linguist-language=Java
+*.form text
 
-# Ignore NetBeans project config
-nbproject/** linguist-generated=true
-
-# Ignore build files
-dist/** linguist-generated=true
-build/** linguist-generated=true
-
-# Ignore images
-images/** linguist-generated=true
+nbproject/** linguist-vendored
+images/** linguist-vendored
+Database_Setup/** linguist-vendored
