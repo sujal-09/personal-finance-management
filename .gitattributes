@@ -1,6 +1,6 @@
-*.form linguist-language=Java
-*.form text
+*.form linguist-generated=true
+*.form -diff
 
-nbproject/** linguist-vendored
-images/** linguist-vendored
-Database_Setup/** linguist-vendored
+nbproject/** linguist-generated=true
+images/** linguist-generated=true
+Database_Setup/** linguist-generated=true
