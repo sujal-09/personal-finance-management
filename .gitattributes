@@ -1,11 +1,12 @@
-# Treat NetBeans GUI files as Java
-*.form linguist-language=Java
+# Ignore NetBeans GUI builder files
+*.form linguist-generated=true
 
 # Ignore NetBeans project config
-nbproject/* linguist-vendored
+nbproject/** linguist-generated=true
 
-# Ignore build/xml configs
-*.xml linguist-vendored
+# Ignore build files
+dist/** linguist-generated=true
+build/** linguist-generated=true
 
 # Ignore images
-images/* linguist-vendored
+images/** linguist-generated=true
