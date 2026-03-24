@@ -1,89 +1,174 @@
-# Personal Finance Management System 💰
+# 💰 Personal Finance Management System
 
-## Overview
-The Personal Finance Management System is an application developed using Java Swing on Apache NetBeans IDE and MySQL for Database Management. This system enables users to monitor their financial habits, track previous transactions, and visualize monthly financial data using charts.
+A **Java Swing desktop application** for managing personal finances. This system allows users to track income, expenses, savings goals, and visualize financial data using interactive charts. The application uses **MySQL** for persistent data storage and provides a user-friendly interface for efficient financial management.
 
-## Software Used
-- **IDE:** Apache NetBeans
-- **Database:** MySQL
-- **Java UI Framework:** Java Swing
-- **Chart Library:** XChart
+---
 
-## Features
-1. **Account Management:** Users can create and manage multiple accounts to meet their financial needs.
-2. **Summarized Display:** Provides users with a clear overview of their financial status, including current savings and spending habits.
-3. **Income and Expense Tracking:** Dedicated tabs allow users to conveniently record their income and expenses, facilitating efficient management of finances.
-4. **Interactive Charts:** Visualize monthly expenditure and savings through interactive charts, offering users insightful graphical representations of their financial data.
-5. **Transaction History:** Easily access and review the latest transactions, enabling users to track their financial activity over time.
-6. **Savings Target:** Set savings targets with a progress bar indicating the progress towards the goal for the current month, empowering users to stay focused on their financial objectives.
+# 🚀 Features
 
-## Additional Libraries Used
-- **JDBC Driver (MySQL Connector):** Connects Java applications to MySQL databases.
-- **JCalendar:** Provides Date-related components for user-friendly date selection.
-- **XChart:** Generates interactive charts for visualizing financial data.
-- **AbsoluteLayout:** Facilitates precise positioning of UI components.
+* 🔐 User Authentication (Login & Signup)
+* 💳 Account Management
+* 📈 Income Tracking
+* 📉 Expense Tracking
+* 🎯 Monthly Savings Target
+* 📊 Interactive Charts & Analytics
+* 🧾 Transaction History
+* 📅 Date-based Financial Records
+* 🏠 Dashboard Overview
+* 🗄 MySQL Database Integration
 
-## Project Structure
+---
+
+# 🛠 Tech Stack
+
+**Frontend:** Java Swing
+**Backend:** Core Java
+**Database:** MySQL
+**IDE:** Apache NetBeans / IntelliJ IDEA
+**Database Connectivity:** JDBC
+
+---
+
+# 📚 Libraries Used
+
+* MySQL Connector (JDBC)
+* JCalendar (Date Picker)
+* XChart (Charts & Graphs)
+* AbsoluteLayout (UI Layout)
+
+---
+
+# 📂 Project Structure
 
 ```
-📦src
-┣ 📂Chart
-┃ ┗ 📜IncomeExpenseChart.java
-┣ 📂Database
-┃ ┣ 📜DatabaseManager.java
-┃ ┗ 📜UserSession.java
-┣ 📂Home
-┃ ┣ 📜HomePage.form
-┃ ┗ 📜HomePage.java
-┣ 📂Icon
-┃ ┗ 📜icons.png...
-┣ 📂Login
-┃ ┣ 📜Login.form
-┃ ┣ 📜Login.java
-┃ ┣ 📜SignUp.form
-┃ ┗ 📜SignUp.java
-┗ 📂personalfinancemanagement
-┗ 📜PersonalFinanceManagement.java
+src/
+ ├── Chart/
+ │    └── IncomeExpenseChart.java
+ │
+ ├── Database/
+ │    ├── DatabaseManager.java
+ │    └── UserSession.java
+ │
+ ├── Home/
+ │    ├── HomePage.java
+ │    └── HomePage.form
+ │
+ ├── Login/
+ │    ├── Login.java
+ │    ├── Login.form
+ │    ├── SignUp.java
+ │    └── SignUp.form
+ │
+ └── personalfinancemanagement/
+      └── PersonalFinanceManagement.java
 ```
 
-## Screenshots
+---
 
-### Login
+# 📸 Screenshots
+
+### 🔐 Login
+
 ![Login Page](images/login.png)
 
-### Signup
+### 📝 Signup
+
 ![Signup Page](images/signup.png)
 
-### Home
+### 🏠 Dashboard
+
 ![Home Page](images/home.png)
 
-### Accounts
+### 💳 Accounts
+
 ![Accounts Page](images/accounts.png)
 
-### Income
+### 📈 Income
+
 ![Income Page](images/incomes.png)
 
-### Expense
+### 📉 Expense
+
 ![Expense Page](images/expenses.png)
 
-### Budget
+### 🎯 Budget
+
 ![Budget Page](images/budget.png)
 
-## Installation
-1. Clone the repository.
-2. Open the project in Apache NetBeans.
-3. Set up the MySQL database according to the provided schema.
-   - Navigate to the `database_setup` folder and follow the instructions in the `README.md` file to set up the database.
-4. Run the project.
+---
 
-## Usage
-1. Sign up for an account or log in if you already have one.
-2. Add accounts and set up your financial details.
-3. Record your income and expenses.
-4. Monitor your financial status through the provided charts and summaries.
+# ⚙️ Installation & Setup
 
-## Contributors
-- [Onkar Mendhapurkar](https://github.com/onkar69483)
-- [Mihir Hebalkar](https://github.com/mihirhebalkar)
-- [Sachin Mhetre](https://github.com/SachinMhetre678)
-- [Parimal Kulkarni](https://github.com/parimal1009)
+### 1. Clone Repository
+
+```
+git clone https://github.com/sujal-09/personal-finance-management.git
+```
+
+### 2. Open Project
+
+Open project in:
+
+* Apache NetBeans
+  OR
+* IntelliJ IDEA
+
+### 3. Setup Database
+
+* Install MySQL
+* Create database
+* Import SQL file from:
+
+```
+Database_Setup/
+```
+
+### 4. Configure Database
+
+Update credentials inside:
+
+```
+DatabaseManager.java
+```
+
+Example:
+
+```
+String url = "jdbc:mysql://localhost:3306/finance_db";
+String user = "root";
+String password = "your_password";
+```
+
+### 5. Run Project
+
+Run:
+
+```
+PersonalFinanceManagement.java
+```
+
+---
+
+# 🎯 Use Case
+
+This project helps users:
+
+* Track daily expenses
+* Monitor income
+* Set savings goals
+* Visualize financial habits
+* Manage multiple accounts
+* Analyze monthly spending
+
+---
+
+# 👨‍💻 Author
+
+**Sujal Chouksey**
+GitHub: https://github.com/sujal-09
+
+---
+
+# ⭐ If you like this project
+
+Give it a ⭐ on GitHub and feel free to contribute!
