@@ -1,21 +1,26 @@
-# Ignore NetBeans build directory
+# NetBeans build
 /build/
+/dist/
+/nbproject/private/
 
-# Ignore compiled Java classes
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Compiled Java
 *.class
 
-# Ignore NetBeans cache files
+# Archives
 *.zip
 *.tar.gz
 
-# Ignore any other temporary or generated files
+# OS files
 .DS_Store
-.idea/
-*.iml
+Thumbs.db
 
-# Ignore manifest file
+# Logs
+*.log
+
+# Manifest (optional)
 manifest.mf
-
-# Ignore build.xml file
-build.xml
-
