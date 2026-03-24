@@ -1,1 +1,3 @@
-*.form linguist-language=Java
+*.form linguist-vendored
+nbproject/* linguist-vendored
+*.xml linguist-vendored
